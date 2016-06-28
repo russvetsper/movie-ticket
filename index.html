@@ -11,17 +11,17 @@
   <body>
     <div class="container">
 
-      <form id="task-form" class="form-group" >
-        <label for="new-task">Your Name:</label>
-        <input id="new-task" class="form-control" required type="text" >
+      <form id="user-form" class="form-group" >
+        <label for="new-user">Your Name:</label>
+        <input id="new-user" class="form-control" type="text" >
 
         <!-- age -->
         <label for="ageAdult">Adult:</label>
-        <input id="ageAdult" class="form-control"  type="number" value="" placeholder="0">
+        <input id="ageAdult" class="form-control"  type="number" value="0" placeholder="0">
         <label for="ageSenior">Senior:</label>
-        <input id="ageSenior" class="form-control"  type="number"  value="" placeholder="0">
+        <input id="ageSenior" class="form-control"  type="number"  value="0" placeholder="0">
         <label for="ageChild">Child:</label>
-        <input id="ageChild" class="form-control"  type="number" value="" placeholder="0">
+        <input id="ageChild" class="form-control"  type="number" value="0" placeholder="0">
 
 
         <!-- time -->
@@ -43,8 +43,8 @@
 
           <label for="movieOption"> Please choose your movie
             <select class="form-control" id="movieOption">
-              <option value="1">X-Men</option>
-              <option value="2">Indenpendce Day</option>
+              <option value="1">X-Men (Adult only)</option>
+              <option value="2">Indenpendce Day (Adult only)</option>
               <option value="3">Godzilla</option>
             </select>
           </label>
@@ -69,9 +69,33 @@
       </form>
     </div>
     <div class="container">
-      <ul id="listDisplay">
+      <h1>Wierd Theater</h1>
+      <h2>Movie Type</h2>
+      <ul>
+        <li>X-Men costs $15</li>
+        <li>indenpendceDay costs $20</li>
+        <li>Godzilla $20</li>
+      </ul>
+      <h2>Discount</h2>
+      <ul>
+        <li>Senior Discount $5 offf per person</li>
+        <li>Children Discount $7 offf per person</li>
+      </ul>
+      <h2>Time Charge</h2>
+      <ul>
+        <li>morning charge additional fee $10</li>
+        <li>afterhoon charge additional fee $100</li>
+        <li>evening charge additional fee $200</li>
+        <li>night charge additional fee $3</li>
 
       </ul>
+      <p id="listDisplay">
+
+      </p>
+    </div>
+    <div class="container">
+      <img id="moviePhoto">
+      <ul id="movieDisplay"></ul>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+
+      <form id="task-form" class="form-group" >
+        <label for="new-task">Your Name:</label>
+        <input id="new-task" class="form-control" required type="text" >
+
+        <!-- age -->
+        <label for="new-task">Adult:</label>
+        <input id="new-task" class="form-control"  type="number" value="" placeholder="0">
+        <label for="new-task">Senior:</label>
+        <input id="new-task" class="form-control"  type="number"  value="" placeholder="0">
+        <label for="new-task">Child:</label>
+        <input id="new-task" class="form-control"  type="number" value="" placeholder="0">
+
+
+        <!-- time -->
+        <div class="form-group">
+          <label for="movieTime"> Please choose show time
+            <select class="form-control" id="movieTime">
+              <option value="1">morning</option>
+              <option value="2">afternoon</option>
+              <option value="3">evening</option>
+              <option value="4">night</option>
+            </select>
+          </label>
+
+        </div>
+
+
+        <!-- movie -->
+        <div class="form-group">
+
+          <label for="movieOption"> Please choose your movie
+            <select class="form-control" id="movieOption">
+              <option value="1">X-Men</option>
+              <option value="2">The crazzies</option>
+              <option value="3">Indenpendce Day</option>
+              <option value="4">Godzila</option>
+            </select>
+          </label>
+        </div>
+
+
+        <!-- payment -->
+        <div class="form-group">
+
+          <label for="payment"> Choose payment method
+            <select class="form-control" id="payment">
+              <option value="1">credit card</option>
+              <option value="2">debit card</option>
+              <option value="3">gift card</option>
+              <option value="4">pay at counter</option>
+            </select>
+          </label>
+        </div>
+
+
+        <button class="btn form-control" type="submit" name="button">SUBMIT</button>
+      </form>
+    </div>
+    <div class="container">
+      <ul id="listDisplay">
+
+      </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+
+  </html>

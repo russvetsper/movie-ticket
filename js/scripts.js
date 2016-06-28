@@ -69,9 +69,9 @@ if(movieChoice==="1"){
     ageDiscount(ageSeniorPeople,ageChildPeople);
     $("#listDisplay").text(user+" Thank you for ordering with us. Your total price is $"+totalCost);
     $("#movieDisplay").html(
-      "<li>"+xMen.title+"</li>"+
-      "<li>"+xMen.rating+"</li>"+
-      "<li>"+xMen.startTime+"</li>");
+      "<li> Movie Title:"+xMen.title+"</li>"+
+      "<li> Movie Rating: "+xMen.rating+"</li>"+
+      "<li> Moving Start Time:"+xMen.startTime+"</li>");
       $("#moviePhoto").attr("src",xMen.photo);
     }
 
@@ -85,9 +85,9 @@ totalCost=indenpendceDay.admissionPrice*totalPerson;
     ageDiscount(ageSeniorPeople,ageChildPeople);
     $("#listDisplay").text("Your total price is $"+totalCost);
     $("#movieDisplay").html(
-      "<li>"+indenpendceDay.title+"</li>"+
-      "<li>"+indenpendceDay.rating+"</li>"+
-      "<li>"+indenpendceDay.startTime+"</li>"
+      "<li> Movie Title:"+indenpendceDay.title+"</li>"+
+      "<li> Movie Rating:"+indenpendceDay.rating+"</li>"+
+      "<li> Moving Start Time:"+indenpendceDay.startTime+"</li>"
     );
     $("#moviePhoto").attr("src",indenpendceDay.photo);
 
@@ -97,9 +97,9 @@ totalCost=indenpendceDay.admissionPrice*totalPerson;
   ageDiscount(ageSeniorPeople,ageChildPeople);
   $("#listDisplay").text("Your total price is $"+totalCost);
   $("#movieDisplay").html(
-    "<li>"+godzilla.title+"</li>"+
-    "<li>"+godzilla.rating+"</li>"+
-    "<li>"+godzilla.startTime+"</li>"
+    "<li> Movie Title:"+godzilla.title+"</li>"+
+    "<li> Movie Rating:"+godzilla.rating+"</li>"+
+    "<li> Moving Start Time:"+godzilla.startTime+"</li>"
   );
   $("#moviePhoto").attr("src",godzilla.photo);
 

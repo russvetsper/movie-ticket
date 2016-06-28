@@ -1,11 +1,39 @@
 form{
 
-  background-color: darkgray;
+  background-color: #D4A190;
   font-size: xx-large;
   text-align: center;
+  border-radius: 50px;
 }
 #user-form input{
     width: 30%;
     margin: auto;
     text-align: center;
+}
+
+body{
+
+font-family: 'Montserrat', sans-serif;
+}
+.header{
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: #A1D490;
+  padding: 20px;
+}
+.header h1{
+font-size: 80px;
+
+}
+
+img{
+  float: left;
+  width:50%;
+
+}
+#movieDisplay{
+  list-style: none;
+  background-color: #90C3D4;
+  border-radius: 40px;
+  font-size: 30px;
 }

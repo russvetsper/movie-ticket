@@ -38,7 +38,9 @@ if(ageChildPeople>0){
 }
 }
 
-
+function totalPeople(ageAdultPeople,ageSeniorPeople,ageChildPeople){
+return ageAdultPeople+ageSeniorPeople+ageChildPeople;
+}
 
 
 
@@ -48,19 +50,20 @@ $("form#user-form").submit(function(event){
 event.preventDefault();
 var user=$("#new-user").val();
 var ageAdultPeople=parseInt($("input#ageAdult").val());
-var ageSeniorPeople=parseInt($("input#agesenior").val());
+var ageSeniorPeople=parseInt($("input#ageSenior").val());
 var ageChildPeople=parseInt($("input#ageChild").val());
 
 
 var movieWatchTime=$("#movieTime").val();
 var movieChoice=$("#movieOption").val();
 //retrive movie title from user's choice
+var totalPerson =totalPeople(ageAdultPeople,ageSeniorPeople,ageChildPeople);
 if(movieChoice==="1"){
-totalCost=xMen.admissionPrice;
     if(ageChildPeople>0){
     $("#listDisplay").text("Please Choose Godzilla because children are allowed.");
     totalCost=0;
-    }
+  }else{
+    totalCost=xMen.admissionPrice*totalPerson;
 
     movieAdditonalPrice(movieWatchTime);
     ageDiscount(ageSeniorPeople,ageChildPeople);
@@ -70,9 +73,10 @@ totalCost=xMen.admissionPrice;
       "<li>"+xMen.rating+"</li>"+
       "<li>"+xMen.startTime+"</li>");
       $("#moviePhoto").attr("src",xMen.photo);
+    }
 
 }else if(movieChoice==="2"){
-totalCost=indenpendceDay.admissionPrice;
+totalCost=indenpendceDay.admissionPrice*totalPerson;
     if(ageChildPeople>0){
     $("#listDisplay").text("Please Choose Godzilla because children are allowed.");
     totalCost=0;
@@ -88,7 +92,7 @@ totalCost=indenpendceDay.admissionPrice;
     $("#moviePhoto").attr("src",indenpendceDay.photo);
 
 }else{
-  totalCost=godzilla.admissionPrice;
+  totalCost=godzilla.admissionPrice*totalPerson;
   movieAdditonalPrice(movieWatchTime);
   ageDiscount(ageSeniorPeople,ageChildPeople);
   $("#listDisplay").text("Your total price is $"+totalCost);

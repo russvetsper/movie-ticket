@@ -4,3 +4,8 @@ form{
   font-size: xx-large;
   text-align: center;
 }
+#user-form input{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}

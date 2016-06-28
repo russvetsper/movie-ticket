@@ -26,9 +26,9 @@ font-size: 80px;
 
 }
 
-img{
+#moviePhoto{
   float: left;
-  width:50%;
+  width:30%;
 
 }
 #movieDisplay{
@@ -36,4 +36,20 @@ img{
   background-color: #90C3D4;
   border-radius: 40px;
   font-size: 30px;
+  padding-bottom: 40px;
+}
+#listDisplay{
+  border-radius: 40px;
+  font-size: 25px;
+  background-color: #A1D490;
+  padding: 20px;
+
+}
+.rules h2{
+text-align: center;
+}
+.rules ul{
+  padding: 0 30%;
+  width: 100%;
+    list-style-type: upper-roman
 }
